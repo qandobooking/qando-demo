@@ -1,3 +1,3 @@
 # Qando Demo
 
-Supercool demos :sunglasses:
+Supercool demos :sunglasses: :fire:
