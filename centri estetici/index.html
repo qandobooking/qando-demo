@@ -146,7 +146,9 @@
                         <br> scegli un servizio, seleziona una data e un ora disponibile e prenota.</p>
                         <br />
                         <br />
+                <div>
                     <div id="qando-root"></div>
+                </div>    
                 </div>
             </div>
         </div>
@@ -292,15 +294,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/qandobooking/qando-js-sdk/master/lib/qando.js"></script>
-   <script type="text/javascript">(function() {
-     qando.booking('#qando-root', {
-       shop: 'estetista',
-       css: true,
-       header: true,
-       footer: false,
-     });
-   })();
-   </script>
+     <script type="text/javascript">(function() {
+       qando.booking('#qando-root', {
+         shop: 'flowerpowercom',
+         css: true,
+         header: false,
+         footer: false,
+       });
+     })();
+     </script>
 </body>
 
 </html>

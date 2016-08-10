@@ -97,14 +97,14 @@
         </div>
     </section>
 
-    <!-- Download Section -->
+    <!-- Booking Section -->
     <section id="download" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Prendi un appuntamento</h2>
                     <p>Puoi vedere gli spazi disponibili e prendere un appuntamento in pochi secondi cliccando questo bottone:</p>
-                    <a href="#" class="btn btn-default btn-lg">Prenota Subito</a>
+                    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Prenota Subito</button>
                 </div>
             </div>
         </div>
@@ -143,6 +143,25 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Prendi un appuntamento</h4>
+          </div>
+          <div class="modal-body">
+            <div id="qando-root"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -162,10 +181,10 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/qandobooking/qando-js-sdk/master/lib/qando.js"></script>
      <script type="text/javascript">(function() {
        qando.booking('#qando-root', {
-         shop: 'Barber Shop',
+         shop: 'superstarbarbershopcom',
          css: true,
          header: true,
-         footer: true,
+         footer: false,
        });
      })();
      </script>
